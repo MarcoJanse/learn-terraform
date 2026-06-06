@@ -20,13 +20,13 @@ resource "azurerm_resource_group" "rg" {
 
   tags = {
     Environment = "Test"
-    Team = "DevOps"
+    Team        = "DevOps"
   }
 }
 
 resource "azurerm_virtual_network" "vnet" {
-  name = "myTFVnet"
-  address_space = [ "10.0.0.0/16" ]
-  location = "northeurope"
+  name                = "myTFVnet"
+  address_space       = ["10.0.0.0/16"]
+  location            = "northeurope"
   resource_group_name = azurerm_resource_group.rg.name
 }
