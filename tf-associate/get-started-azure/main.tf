@@ -15,7 +15,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-learn-tf-tst"
+  name     = var.resource_group_name
   location = "northeurope"
 
   tags = {
