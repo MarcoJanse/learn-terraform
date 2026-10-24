@@ -14,7 +14,7 @@ locals {
   }
 
   # Common name prefix for resources
-  name_prefix = "${var.environment}-"
+  name_prefix = "${var.environment}-tf-"
 }
 
 resource "azurerm_resource_group" "main" {
